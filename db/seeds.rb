@@ -37,3 +37,45 @@ unless User.any?
     password_confirmation: "letmein",
   )
 end
+
+unless Ticket.any?
+  Ticket.create(
+    movie_name: "Avengers Endgame",
+    seat: "A5",
+    tier: "regular",
+    price: 16,
+    available: true,
+  )
+
+  Ticket.create(
+    movie_name: "Avengers Endgame",
+    seat: "F5",
+    tier: "premium",
+    price: 45,
+    available: false,
+  )
+
+  Ticket.create(
+    movie_name: "Avengers Endgame",
+    seat: "E5",
+    tier: "press",
+    price: 45,
+    available: true,
+  )
+
+  Ticket.create(
+    movie_name: "Shazam",
+    seat: "A16",
+    tier: "regular",
+    price: 16,
+    available: true,
+  )
+
+  Ticket.create(
+    movie_name: "fight_club",
+    seat: "R2",
+    tier: "regular",
+    price: 16,
+    available: false,
+  )
+end
