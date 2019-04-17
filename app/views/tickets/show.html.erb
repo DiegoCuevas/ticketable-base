@@ -1,2 +1,7 @@
-<h1>Tickets#show</h1>
-<p>Find me in app/views/tickets/show.html.erb</p>
+<h1>Ticket</h1>
+<ul> 
+  <h3><%= @ticket.movie_name %></h3>
+  <li>Seat: <%= @ticket.seat %></li>
+  <li>Ticket tier: <%= @ticket.tier %></li>
+  <li>Price: $<%= @ticket.price %></li>
+</ul> 
