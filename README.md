@@ -20,7 +20,6 @@ Users can view the following tickets according to their role:
 | member  | regular                |
 | premium | regular, premium       |
 | admin   | regular, premum, press |
-|         |                        |
 
 ## Tickets
 
