@@ -5,3 +5,35 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+unless User.any?
+  member = User.create!(
+    first_name: "Edward",
+    last_name: "Norton",
+    username: "edn",
+    email: "member@able.co",
+    role: "member",
+    password: "letmein",
+    password_confirmation: "letmein",
+  )
+
+  premium = User.create!(
+    first_name: "Tyler",
+    last_name: "Durden",
+    username: "tyler",
+    email: "premium@able.co",
+    role: "premium",
+    password: "letmein",
+    password_confirmation: "letmein",
+  )
+
+  admin = User.create!(
+    first_name: "Jack",
+    last_name: "Durden",
+    username: "jack",
+    email: "admin@able.co",
+    role: "admin",
+    password: "letmein",
+    password_confirmation: "letmein",
+  )
+end
